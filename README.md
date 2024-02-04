@@ -28,6 +28,7 @@ The following SPDX fields are populated from the POM project information:
 
 # References
 
+* What is a Software Bill of Materials (SBOM)? https://scribesecurity.com/sbom/
 * 什么是 SBOM（软件物料清单）: https://www.dwcon.cn/post/2094
 * How to create SBOMs in Java with Maven and Gradle: https://snyk.io/blog/create-sboms-java-maven-gradle/
 * spdx-maven-plugin: https://github.com/spdx/spdx-maven-plugin
