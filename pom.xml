@@ -16,6 +16,22 @@
         <url>https://www.example.com</url>
     </organization>
 
+    <developers>
+        <developer>
+            <id>linux_china</id>
+            <name>Jackie</name>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:ssh://git@github.com:linux-china/sbom-demo.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:linux-china/sbom-demo.git</developerConnection>
+        <url>https://github.com/linux-china/sbom-demo</url>
+    </scm>
+
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
