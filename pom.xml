@@ -6,7 +6,7 @@
 
     <groupId>com.example</groupId>
     <artifactId>sbom-demo</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>sbom demo</name>
     <description>this is a sbom demo</description>
     <url>https://example.com</url>
@@ -31,6 +31,10 @@
         <developerConnection>scm:git:ssh://git@github.com:linux-china/sbom-demo.git</developerConnection>
         <url>https://github.com/linux-china/sbom-demo</url>
     </scm>
+
+    <distributionManagement>
+        <downloadUrl>https://github.com/linux-china/sbom-demo</downloadUrl>
+    </distributionManagement>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
