@@ -74,11 +74,29 @@
                 <configuration>
                     <useArtifactID>true</useArtifactID>
                     <spdxFile>
-                        ${project.build.outputDirectory}/${project.groupId}_${project.artifactId}-${project.version}.spdx
+                        ${project.build.outputDirectory}/${project.groupId}-${project.artifactId}-${project.version}-spdx
                     </spdxFile>
                     <creators>
                         <creator>Person:linux_china(demo@example.com)</creator>
                     </creators>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.cyclonedx</groupId>
+                <artifactId>cyclonedx-maven-plugin</artifactId>
+                <version>2.7.11</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>makeAggregateBom</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <outputDirectory>${project.build.outputDirectory}</outputDirectory>
+                    <outputName>${project.groupId}-${project.artifactId}-${project.version}-cyclonedx</outputName>
+                    <outputFormat>json</outputFormat>
                 </configuration>
             </plugin>
         </plugins>
