@@ -16,6 +16,10 @@ SBOM概述了应用程序中引入的包和库，以及这些包、库与其他�
 
 ![SBOM Type Benefit](src/site/images/sbom-type-benefit.png)
 
+# CycloneDX
+
+OWASP CycloneDX is a full-stack Bill of Materials (BOM) standard that provides advanced supply chain capabilities for cyber risk reduction.
+
 # spdx
 
 The following SPDX fields are populated from the POM project information:
