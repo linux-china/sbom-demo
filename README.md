@@ -19,6 +19,16 @@ SBOM概述了应用程序中引入的包和库，以及这些包、库与其他�
 # CycloneDX
 
 OWASP CycloneDX is a full-stack Bill of Materials (BOM) standard that provides advanced supply chain capabilities for cyber risk reduction.
+The specification supports:
+
+* Software Bill of Materials (SBOM)
+* Software-as-a-Service Bill of Materials (SaaSBOM)
+* Hardware Bill of Materials (HBOM)
+* Machine Learning Bill of Materials (ML-BOM)
+* Manufacturing Bill of Materials (MBOM)
+* Operations Bill of Materials (OBOM)
+* Vulnerability Disclosure Reports (VDR)
+* Vulnerability Exploitability eXchange (VEX)
 
 # spdx
 
