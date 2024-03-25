@@ -48,9 +48,12 @@ The following SPDX fields are populated from the POM project information:
 * SOFTWARE BILL OF MATERIALS: https://www.ntia.gov/page/software-bill-materials
 * What is a Software Bill of Materials (SBOM)? https://scribesecurity.com/sbom/
 * 什么是 SBOM（软件物料清单）: https://www.dwcon.cn/post/2094
+* CycloneDX: https://cyclonedx.org/
 * SPDX: Software Package Data Exchange - https://spdx.dev/
 * How to create SBOMs in Java with Maven and Gradle: https://snyk.io/blog/create-sboms-java-maven-gradle/
 * CycloneDX Maven Plugin: https://github.com/CycloneDX/cyclonedx-maven-plugin
 * spdx-maven-plugin: https://github.com/spdx/spdx-maven-plugin
 * Apache Bill of Materials (BOM) POMs: https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#bill-of-materials-bom-poms
 * Implement SBOM actuator endpoint: https://github.com/spring-projects/spring-boot/pull/39799
+* syft: a CLI tool and Go library for generating a Software Bill of Materials (SBOM) from container images and filesystems https://github.com/anchore/syft
+* Paketo: How to Access the Software Bill of Materials - https://paketo.io/docs/howto/sbom/ 
