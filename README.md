@@ -43,6 +43,22 @@ The following SPDX fields are populated from the POM project information:
 - package versionInfo: project version
 - files for analysis: build source files + project resource files
 
+# SBOM by Paketo buildpacks
+
+Please refer [How to Access the Software Bill of Materials](https://paketo.io/docs/howto/sbom/). 
+
+All sbom files are generated in the `/layers/sbom/launch` directory.
+
+```
+management.endpoint.sbom.additional.buildpacks-lifecycle.location=optional:file:/layers/sbom/launch/buildpacksio_lifecycle/launcher/sbom.cdx.json
+management.endpoint.sbom.additional.buildpacks-liberica-helper.location=optional:file:/layers/sbom/launch/paketo-buildpacks_bellsoft-liberica/helper/sbom.syft.json
+management.endpoint.sbom.additional.buildpacks-liberica-jre.location=optional:file:/layers/sbom/launch/paketo-buildpacks_bellsoft-liberica/jre/sbom.syft.json
+management.endpoint.sbom.additional.buildpacks-ca-certificates.location=optional:file:/layers/sbom/launch/paketo-buildpacks_ca-certificates/helper/sbom.syft.json
+management.endpoint.sbom.additional.buildpacks-executable-jar.location=optional:file:/layers/sbom/launch/paketo-buildpacks_executable-jar/sbom.cdx.json
+management.endpoint.sbom.additional.buildpacks-spring-boot-helper.location=optional:file:/layers/sbom/launch/paketo-buildpacks_spring-boot/helper/sbom.syft.json
+management.endpoint.sbom.additional.buildpacks-spring-boot-spring-cloud-bindings.location=optional:file:/layers/sbom/launch/paketo-buildpacks_spring-boot/spring-cloud-bindings/sbom.syft.json
+```
+
 # References
 
 * SOFTWARE BILL OF MATERIALS: https://www.ntia.gov/page/software-bill-materials
