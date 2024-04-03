@@ -65,6 +65,7 @@ management.endpoint.sbom.additional.buildpacks-spring-boot-spring-cloud-bindings
 * What is a Software Bill of Materials (SBOM)? https://scribesecurity.com/sbom/
 * 什么是 SBOM（软件物料清单）: https://www.dwcon.cn/post/2094
 * CycloneDX: https://cyclonedx.org/
+* CycloneDX BOM Examples: https://github.com/CycloneDX/bom-examples
 * SPDX: Software Package Data Exchange - https://spdx.dev/
 * How to create SBOMs in Java with Maven and Gradle: https://snyk.io/blog/create-sboms-java-maven-gradle/
 * CycloneDX Maven Plugin: https://github.com/CycloneDX/cyclonedx-maven-plugin
