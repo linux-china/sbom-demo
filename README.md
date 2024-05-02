@@ -76,3 +76,4 @@ management.endpoint.sbom.additional.buildpacks-spring-boot-spring-cloud-bindings
 * Paketo: How to Access the Software Bill of Materials - https://paketo.io/docs/howto/sbom/ 
 * Implement SBOM actuator endpoint: https://github.com/spring-projects/spring-boot/pull/39799
 * EXECUTIVE ORDER 14028, IMPROVING THE NATION'S CYBERSECURITY: https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity
+* KBOM - Kubernetes Bill of Materials: https://github.com/ksoclabs/kbom
