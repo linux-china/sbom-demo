@@ -1,8 +1,8 @@
 package com.example;
 
 import org.apache.commons.io.IOUtils;
-import org.cyclonedx.BomParserFactory;
 import org.cyclonedx.model.Bom;
+import org.cyclonedx.parsers.BomParserFactory;
 import org.cyclonedx.parsers.Parser;
 import org.junit.jupiter.api.Test;
 
