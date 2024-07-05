@@ -45,7 +45,7 @@ The following SPDX fields are populated from the POM project information:
 
 # SBOM by Paketo buildpacks
 
-Please refer [How to Access the Software Bill of Materials](https://paketo.io/docs/howto/sbom/). 
+Please refer [How to Access the Software Bill of Materials](https://paketo.io/docs/howto/sbom/).
 
 All sbom files are generated in the `/layers/sbom/launch` directory.
 
@@ -58,6 +58,20 @@ management.endpoint.sbom.additional.buildpacks-executable-jar.location=optional:
 management.endpoint.sbom.additional.buildpacks-spring-boot-helper.location=optional:file:/layers/sbom/launch/paketo-buildpacks_spring-boot/helper/sbom.syft.json
 management.endpoint.sbom.additional.buildpacks-spring-boot-spring-cloud-bindings.location=optional:file:/layers/sbom/launch/paketo-buildpacks_spring-boot/spring-cloud-bindings/sbom.syft.json
 ```
+
+# SBOM & AI
+
+目前来说，SBOM除了安全的用途外，还可以用于AI领域，SBOM的物料清单可以作为很好的Context，方便AI更好地给出对应的提示和输出。
+
+当然AI可以根据代码、README.md、Docs等给出对应的提示，但是更深层次的信息，比如依赖关系、版本信息等，这些是需要经过计算才能得到，
+而AI自身是无法通过自身的学习来得到这些信息的，所以这些计算出来的SBOM的信息对于AI来说是非常重要的。
+
+如目前我们就看到，GitHub已经为[代码仓库提供SBOM生成](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/exporting-a-software-bill-of-materials-for-your-repository)能力，
+此外借助CycloneDX可以生成应用的SBOM信息，这些都会为AI提供更好的Context，给出的最终结果也会更加准确。
+
+* Leading SBOM Standard CycloneDX Now Incorporates Machine Learning: https://accelerationeconomy.com/cybersecurity/leading-sbom-standard-cyclonedx-now-incorporates-machine-learning/
+* Why AI Needs SBOMs: Unveiling the Black Box for Transparency https://www.linkedin.com/pulse/why-ai-needs-sboms-unveiling-black-box-transparency-aph10-diqhe/
+* It’s Time to Talk About AI/ML BOM (Artificial Intelligence Bill of Materials) And Vulnerability Management: https://c2a-sec.com/its-time-to-talk-about-ai-ml-bom-artificial-intelligence-bill-of-materials-and-vulnerability-management/
 
 # References
 
@@ -73,7 +87,8 @@ management.endpoint.sbom.additional.buildpacks-spring-boot-spring-cloud-bindings
 * Apache Bill of Materials (BOM) POMs: https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#bill-of-materials-bom-poms
 * Implement SBOM actuator endpoint: https://github.com/spring-projects/spring-boot/pull/39799
 * syft: a CLI tool and Go library for generating a Software Bill of Materials (SBOM) from container images and filesystems https://github.com/anchore/syft
-* Paketo: How to Access the Software Bill of Materials - https://paketo.io/docs/howto/sbom/ 
+* Paketo: How to Access the Software Bill of Materials - https://paketo.io/docs/howto/sbom/
 * Implement SBOM actuator endpoint: https://github.com/spring-projects/spring-boot/pull/39799
 * EXECUTIVE ORDER 14028, IMPROVING THE NATION'S CYBERSECURITY: https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity
 * KBOM - Kubernetes Bill of Materials: https://github.com/ksoclabs/kbom
+* Exporting a software bill of materials for your repository: https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/exporting-a-software-bill-of-materials-for-your-repository
