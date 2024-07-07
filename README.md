@@ -74,6 +74,7 @@ management.endpoint.sbom.additional.buildpacks-spring-boot-spring-cloud-bindings
 而AI自身是无法通过自身的学习来得到这些信息的，所以这些计算出来的SBOM的信息对于AI来说是非常重要的。
 
 如目前我们就看到，GitHub已经为[代码仓库提供SBOM生成](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/exporting-a-software-bill-of-materials-for-your-repository)能力，
+当然GitHub还包括[Unlocking the power of unstructured data with RAG](https://github.blog/2024-06-13-unlocking-the-power-of-unstructured-data-with-rag/)等功能，这些都是为AI提供更好的Context。
 此外借助CycloneDX可以生成应用的SBOM信息，这些都会为AI提供更好的Context，给出的最终结果也会更加准确。
 
 * Leading SBOM Standard CycloneDX Now Incorporates Machine Learning: https://accelerationeconomy.com/cybersecurity/leading-sbom-standard-cyclonedx-now-incorporates-machine-learning/
