@@ -100,3 +100,4 @@ management.endpoint.sbom.additional.buildpacks-spring-boot-spring-cloud-bindings
 * EXECUTIVE ORDER 14028, IMPROVING THE NATION'S CYBERSECURITY: https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity
 * KBOM - Kubernetes Bill of Materials: https://github.com/ksoclabs/kbom
 * Exporting a software bill of materials for your repository: https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/exporting-a-software-bill-of-materials-for-your-repository
+* FOSDEM 2026 SBOMS and supply chains: https://fosdem.org/2026/schedule/track/sboms-and-supply-chains/
